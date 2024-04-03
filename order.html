@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realizar Pedido</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="order-container">
+    <h2>Realizar Pedido</h2>
+    <form id="order-form">
+      <div class="input-group">
+        <label for="product-id">ID del Producto:</label>
+        <input type="text" id="product-id" name="product-id" disabled>
+      </div>
+      <div class="input-group">
+        <label for="product-name">Nombre del Producto:</label>
+        <input type="text" id="product-name" name="product-name" disabled>
+      </div>
+      <div class="input-group">
+        <label for="supplier">Proveedor:</label>
+        <select id="supplier" name="supplier"></select>
+      </div>
+      <div class="input-group">
+        <label for="quantity">Cantidad:</label>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+      </div>
+      <button type="submit">Confirmar Pedido</button>
+    </form>
+  </div>
+  <script src="order.js"></script>
+</body>
+</html>
